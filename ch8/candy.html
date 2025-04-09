@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Emilys+Candy&display=swap" rel="stylesheet">
+    <title>My Favorite Easter Candies</title>
+    <style>
+      
+        * {
+            box-sizing: border-box;
+        }
+
+     /* ID styles */
+
+        #wrapper{
+            box-sizing: border-box;
+            margin:0;
+            padding:0;
+        }
+
+        /*Element Styles */
+
+        body{
+            display: flex;
+            flex-direction: column;
+            max-width: 100%;
+            margin: 0;
+            background: #dcf9a8;
+        }
+
+        header {
+            font-family: "Emilys Candy", serif;
+            font-weight: 200;
+            font-size: 150%;
+            font-style: normal;
+            padding: 1em;
+            text-align: center;
+            color:#000;
+        }
+
+        img{
+            justify-content: center;
+            padding: 1em;
+        }
+    
+        main{
+            display: flex;
+            flex-direction: row;
+
+            background-color: #f9ceee;
+        }
+
+        article{
+            padding: 1em;
+            flex-grow:1;
+
+        }
+        
+       
+        nav {
+            background: #c1f0fb;
+            padding: 1em;
+            width: 200px;
+            flex-shrink: 0;
+        }
+    
+        main article section h2{
+            font-family: "Emilys Candy", serif;
+            font-weight: 200;
+            font-size: 150%;
+            font-style: normal;
+        }
+        
+        footer {
+            background: #e0cdff;
+            padding: 1em;
+            text-align: center;
+        }
+      
+         /*Class styles */
+         
+         .details{
+            color:#fff;
+            font-weight:bold;
+            font-family:Arial, sans-serif;
+         }
+       
+        /*Compound styles are below */
+
+        /* Additional styling for content */
+        article img {
+            max-width: 85%;
+            height: auto;
+            display: block;
+            margin: 1em 7em 1em 0; /* Changed margin to left-align */
+        }
+        nav a {
+          display: block;
+          padding: 10px;
+          text-decoration: none;
+          color: rgb(0, 0, 0);
+          border-bottom: 1px solid #f0f0f0;
+          text-align: center;
+        }
+       
+        @media (max-width: 700px) {
+            main{
+                flex-direction: column;
+            }
+            nav{
+                width: 100%;
+            }
+            article{
+                flex-direction: column;
+                flex-grow: 1;
+            }
+        }
+       
+    </style>
+</head>
+<body>
+    <div id="wrapper"> 
+    <header>
+        <h1>Best Easter Candies</h1>
+    </header>
+    <main>
+        <nav>
+            <a href="#jellybeans">Jelly Beans</a>
+            <a href="#peeps">Marshmellow Peeps</a>
+    
+        </nav>
+        <article>
+            <section id="beans">
+                <h2>Jelly Beans</h2>
+                <img src="beans.jpg" alt="Mound of jelly bean candies">
+                <p class="details">The best easter candy hands down has 
+                to be the classic jelly bean! They come in a variety of 
+                flavors, I think the best kind are the sour ones!
+                </p>
+            </section>
+            <section id="peeps">
+                <h2>Marshmellow Peeps</h2>
+                <img src="peeps.webp" alt="package of marshmellow peeps">
+                <p class="details">Marshmellow peeps are another of my 
+                    favorite Easter candies! More when I was a little lad!
+                </p>    
+            </section>
+        </article>
+        
+        <article>
+            <section>
+               <h2>Choclolate</h2>
+               <img src="choco.webp" alt="a big chocolate bunny surrounded by smaller chocolate">
+               <p class="details">My next favorite type of Easter candy would have to be milk chocolate.
+                    I think the best ones are the milk chocolates. Not too big on the bitter ones.
+               </p> 
+            </section>
+            <section>
+                <h2>Creme Chocolates</h2>
+                <img src="creme.webp" alt="a basket full of chocolate candies">
+                <p class="details">I think the best type of chocolate is this particular brand! Great
+                    taste!
+                </p>
+            </section>
+        </article>
+    </main>
+    <footer>
+        <p>&copy; 2025 Oscar Romero</p>
+    </footer>
+    </div>
+</body>
+</html>
