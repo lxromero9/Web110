@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<!--Oscar Romero 04/16/2025-->
+<html lang="en">
+<head>
+    <title>JCCC Web Development and Digital Media: Contact</title>
+    <meta charset="utf-8">
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    font-size: 1em;
+    font-family:Arial, Helvetica, sans-serif;
+    color: #000000;
+    text-align: center;
+    background-color: #28e6ff;
+}
+
+h2{
+    text-align: center;
+}
+form{
+    display:grid;
+   
+}
+
+select{
+    grid-column:span2;
+}
+
+input{
+    grid-column: span2;
+}
+
+label{
+    grid-column: span 2;
+}
+
+
+body{
+    background: #006ba9;
+    color:#000000;
+    
+    padding:20px;
+    font-size: 1.5em;
+}
+
+nav{
+    background: #006ba9;
+    padding: 10px;
+    text-align:center;
+}
+
+nav a{
+    display:inline; /*forces stacking on smaller screens*/
+    text-decoration: none;
+    color: #000000;
+    padding: 5px;
+    font-weight: bold;
+}
+
+nav a:visited{
+    text-decoration: underline;
+    color: #ffffff;
+}
+
+nav a:hover{
+    background-color: #28e6ff;
+    color:#000000;
+}
+
+footer{
+    text-align: center;
+    font-size: 65%;
+}
+
+    </style>
+</head>
+
+<Body>
+    <header><h1>JCCC Web Development and Digital Media</h1></header>
+    
+    <nav><b>
+    <a href="index.html">Home</a>&nbsp; <a href="tracks.html">Tracks</a>&nbsp; 
+    <a href="faculty.html">Faculty</a>&nbsp; <a href="contact.html">Contact</a>&nbsp;
+    </b></nav>
+
+    <main>
+    <h2>Want More Info About JCCC?</h2>
+    </main>
+
+    <h3>Contact Us Today!</h3>
+    <p>Required fields are marked with an asterisk *.</p>
+    <form method="post" action="https://webdevbasics.net/scripts/demo.php">
+        <label for="myFName" id="myFName">*First Name:</label>
+        <input type="text" name="myFName" id="myFName" required><br>
+        <label for="myLName" id="myLName">*Last Name:</label>
+        <input type="myLName" name="myLName" id="myLName" required><br>
+        <label for="myEmail" id="myEmail">*E-Mail:</label>
+        <input type="myEmail" name="myEmail" id="myEmail" required><br>
+        <label for="myVisit" id="myVisit">Visit Date:</label>
+        <input type="date" name="myVisit" id="myVisit"><br>
+        <label for="myNum" id="myNum">Phone Number:</label>
+        <input type="tel" maxlength="12" name="myNum" id="myNum"><br>
+        <label for="myChoice" id="learn" name="learn">"I'd like to learn more about..."</label>
+        <select size="2" name="learn" id="learn">
+            <option value="a">Earning College Credit</option>
+            <option value="b">Continuing Education Courses</option>
+        </select><br>
+        <input type="submit" value="Request Information">
+    </form>
+
+    <footer>
+        <small><em>Copyright &copy; 2025 JCCC Web Development and Digital Media<br>
+        <a href="mailto:oromeroh@stumail.jcc.edu">Oscar Romero</a></em></small>
+    </footer>
+</Body>
+</html>
