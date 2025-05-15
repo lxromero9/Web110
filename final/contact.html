@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<!--Oscar Romero Midterm Project-->
+<html lang="en">
+<head>
+<title> Contact Us </title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link href="styles.css" rel="stylesheet"> 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&display=swap" rel="stylesheet">
+</head>    
+
+<body class ="column">
+    <header class="headercol">
+        <h1 class="title">Contact Us</h2>
+    </header>
+
+    <nav class = "navcol">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="benedict.html">St. Benedict</a></li>
+            <li><a href="sienna.html">St. Catherine of Siena</a></li>
+            <li><a href ="kolbe.html">St. Maximillian Kolbe</a></li>
+            <li><a href="saintroles.html">Saints</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    
+    <content class = "maincol">
+            <h2 class="titlecol">Contact Us!</h2>
+            <p>Thanks for checking us out! We will continue to add more stories monthly! So keep an eye open and come back!
+                In the meantime we will appreciate feedback and if you want to join our monthly prayer card mail, fill out 
+                the form! Thanks for visiting, see you next time!
+            </p>
+            
+      </content>
+    
+        <content class = 'contenttwo'>
+            <h2 class="titlecol">Leave Us Your Thoughts!</h2>
+            <form action="demo.php" method="post" name="order" id="order">
+            
+                <h3>Enter the best way to comumunicate with you!</h3>
+                <input type="radio" name="radio" id="radio1" value="phone">Phone<br>
+                <input type="radio" name="radio" id="radio2" value="email">Email<br>
+
+                What is you thoughts on the information?<br>
+                <select size="1" name="optionlist" id="optionlist">
+                    <option value="red">Great!</option>
+                    <option value="green">Ok</option>
+                    <option value="blue">Needs more research.</option>
+                </select><br><br>
+                What is your favorite our of the three stories?<br>
+                <select size="1" name="optionlist2" id="optionlist2" mulitple="muliple">
+                    <option value="red">Kolbe</option>
+                    <option value="green">Catherine</option>
+                    <option value="blue">Benedict</option>
+                    <br><br>
+                </select><br>
+                
+                <fieldset>
+                    <legend>Leave us your address to recieve our monthly prayer card!</legend>
+                    <label>Street: <input type="text" name="street" id="street" size="54"></label><br><br>
+                    <label>City: <input type="text" name="city" id="city"></label><br><br>
+                    <label>State:<input type="state" name="state" id="state" maxlength="5" size="5"></label><br><br>
+                    <label>Zip Code:<input type="text" name="zipcode" id="zipcode" maxlength="5" size="5"></label>
+                </fieldset><br><br>
+
+                <input type="submit" value="Submit">
+                <input type="reset" value="Clear Form">
+            </form>
+     </content>
+    
+
+    <footer class="footcol">
+        &copy;2025 Oscar Romero <a href="mailto:oromeroh@stumail.jccc.edu">Contact Me</a>
+    </footer>
+</body>
+</html>
